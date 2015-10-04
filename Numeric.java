@@ -14,6 +14,6 @@ public class Numeric {
     
     public static BigInteger Factorial(int i)
     {
-        return (i <= 1) ? BigInteger.valueOf(1) : Factorial(i - 1).multiply(BigInteger.valueOf(i));
+        return (i <= 1) ? BigInteger.ONE : Factorial(i - 1).multiply(BigInteger.valueOf(i));
     }
 }
