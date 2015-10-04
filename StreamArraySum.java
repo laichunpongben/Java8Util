@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 import java.util.stream.IntStream;
 
-public class SimpleArraySum {
+public class StreamArraySum {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
