@@ -17,11 +17,11 @@ public class IntArrayStreamCalc {
         System.out.println(sum);
     }
     
-    private int sumArray(int[] inputs) {
+    private static int sumArray(int[] inputs) {
         return IntStream.of(inputs).sum();
     }
     
-    private int countArrayPositive(int[] inputs) {
+    private static int countArrayPositive(int[] inputs) {
         return (int) IntStream.of(inputs).filter(x -> x > 0).count();
     }
     
