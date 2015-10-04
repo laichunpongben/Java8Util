@@ -1,4 +1,4 @@
-//Simple Array Sum
+//Array Sum using Stream
 
 import java.io.*;
 import java.util.*;
