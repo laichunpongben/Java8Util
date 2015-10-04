@@ -6,7 +6,8 @@ import java.util.stream.IntStream;
 
 public class IntArrayStreamCalc {
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] inputs = new int[n];
@@ -17,11 +18,13 @@ public class IntArrayStreamCalc {
         System.out.println(sum);
     }
     
-    private static int sumArray(int[] inputs) {
+    private static int sumArray(int[] inputs)
+    {
         return IntStream.of(inputs).sum();
     }
     
-    private static int countArrayPositive(int[] inputs) {
+    private static int countArrayPositive(int[] inputs)
+    {
         return (int) IntStream.of(inputs).filter(x -> x > 0).count();
     }
     
