@@ -1,7 +1,7 @@
 /*
 Hackerrank
 Algorithms > Warmup > Library Fine
-https://www.hackerrank.com/challenges/time-conversion
+https://www.hackerrank.com/challenges/library-fine/
 Test Case #11 Wrong
 */
 
