@@ -2,7 +2,6 @@
 Hackerrank
 Algorithms > Warmup > Library Fine
 https://www.hackerrank.com/challenges/library-fine/
-Test Case #11 Wrong
 */
 
 import java.io.*;
@@ -27,7 +26,8 @@ public class LibraryFine {
     private static int computeFine(LocalDate actualReturnDate, LocalDate expectedReturnDate)
     {
         if (!(actualReturnDate.isAfter(expectedReturnDate))) return 0;
-        else if (actualReturnDate.getMonth() == expectedReturnDate.getMonth()) 
+        else if ((actualReturnDate.getMonth() == expectedReturnDate.getMonth()) && 
+                 (actualReturnDate.getYear() == expectedReturnDate.getYear())) 
             return 15 * actualReturnDate.compareTo(expectedReturnDate);
         else if (actualReturnDate.getYear() == expectedReturnDate.getYear())
             return 500 * (actualReturnDate.getMonthValue() - expectedReturnDate.getMonthValue());
