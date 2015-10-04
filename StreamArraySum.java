@@ -15,5 +15,7 @@ public class StreamArraySum {
         }
         int sum = IntStream.of(inputs).sum();
         System.out.println(sum);
+        
+        int countPositive = (int) IntStream.of(inputs).filter(x -> x > 0).count();
     }
 }
